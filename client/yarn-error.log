@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.22.9
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ENETUNREACH 2606:4700::6810:1423:443 - Local (:::0)
+      at internalConnect (net.js:924:16)
+      at defaultTriggerAsyncIdScope (internal/async_hooks.js:364:12)
+      at emitLookup (net.js:1060:9)
+      at /usr/share/yarn/lib/cli.js:103606:29
+      at /usr/share/yarn/lib/cli.js:103452:25
+      at RawTask.module.exports.RawTask.call (/usr/share/yarn/lib/cli.js:79584:19)
+      at flush (/usr/share/yarn/lib/cli.js:79666:29)
+      at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+npm manifest: 
+  {
+    "name": "expense-tracker-react",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0",
+      "react-scripts": "3.4.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
